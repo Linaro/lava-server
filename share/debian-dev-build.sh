@@ -3,7 +3,7 @@
 set -e
 
 BRANCH=master
-arch=`dpkg-architecture -a$2 > /dev/null 2>&1 ; echo $?`
+arch=''
 
 while getopts ":p:a:b:" opt; do
   case $opt in
